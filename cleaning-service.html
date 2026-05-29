@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Home Cleaning | Demo by TG Web Studio</title>
+  <meta name="description" content="A demo cleaning service website built by TG Web Studio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Demo Header -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Demo navigation">
+      <a class="logo" href="index.html#work" aria-label="Back to TG Web Studio demos">
+        <span class="logo-mark">TG</span>
+        <span>Cleaning Demo</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#quote">Quote</a>
+        <a class="btn btn-small" href="index.html#contact">Get a Site Like This</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Cleaning Service Hero -->
+    <section class="demo-hero cleaning-demo">
+      <div class="container demo-hero-grid">
+        <div>
+          <p class="eyebrow eyebrow-gold">Bright Home Cleaning</p>
+          <h1>Reliable cleaning for busy homes and offices.</h1>
+          <p class="hero-text">A clean service website that helps customers understand packages, trust the company, and request a quote fast.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#quote">Request a Quote</a>
+            <a class="btn btn-secondary" href="#services">See Services</a>
+          </div>
+        </div>
+
+        <div class="demo-panel">
+          <p class="demo-stat">Free estimates</p>
+          <h2>Weekly, biweekly, or one-time cleaning</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cleaning Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Clear options for every customer.</h2>
+        </div>
+
+        <div class="card-grid three-columns">
+          <article class="card">
+            <h3>Standard Cleaning</h3>
+            <p>Kitchen, bathrooms, floors, dusting, and common living areas.</p>
+          </article>
+
+          <article class="card">
+            <h3>Deep Cleaning</h3>
+            <p>Detailed top-to-bottom cleaning for move-ins, move-outs, and resets.</p>
+          </article>
+
+          <article class="card">
+            <h3>Office Cleaning</h3>
+            <p>Reliable recurring cleaning for local offices, studios, and small shops.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section section-light" id="why">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>A website section built to create trust quickly.</h2>
+        </div>
+
+        <div class="card-grid three-columns">
+          <article class="reason-card">
+            <h3>Background checked</h3>
+            <p>Customers know who is coming into their home or business.</p>
+          </article>
+
+          <article class="reason-card">
+            <h3>Supplies included</h3>
+            <p>Simple expectations make it easy to book service.</p>
+          </article>
+
+          <article class="reason-card">
+            <h3>Satisfaction focused</h3>
+            <p>Clear promise, clear communication, better conversions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="section" id="quote">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Get a Quote</p>
+          <h2>Tell us what you need cleaned.</h2>
+          <p>Customers can send the basics and get a fast follow-up.</p>
+        </div>
+
+        <form class="contact-form">
+          <label for="cleaning-name">Name</label>
+          <input type="text" id="cleaning-name" name="name" placeholder="Your name" required>
+
+          <label for="cleaning-email">Email</label>
+          <input type="email" id="cleaning-email" name="email" placeholder="you@example.com" required>
+
+          <label for="cleaning-message">Cleaning Details</label>
+          <textarea id="cleaning-message" name="message" rows="5" placeholder="Home size, service type, and preferred date." required></textarea>
+
+          <button class="btn" type="submit">Request Quote</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Bright Home Cleaning</strong>
+        <p>Demo website by TG Web Studio</p>
+      </div>
+      <a class="text-link footer-link" href="index.html#work">Back to Portfolio</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
