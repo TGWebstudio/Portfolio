@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Dental & Wellness | Dental Demo</title>
+  <meta name="description" content="Clean luxury dental and wellness demo website by TG Web Studio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top">Elite Dental & Wellness</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#doctor">Doctor</a>
+        <a href="#services">Services</a>
+        <a href="#insurance">Insurance</a>
+        <a href="#faq">FAQ</a>
+        <a href="#schedule">Schedule</a>
+        <a href="../../index.html">TG Web Studio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Modern Dental Care</p>
+          <h1>Modern Dentistry With Patient Comfort First</h1>
+          <p>A calm, premium website for practices that want patients to understand services, verify insurance, and feel comfortable before they walk in.</p>
+          <a class="btn" href="#schedule">Schedule Appointment</a>
+        </div>
+        <div class="wellness-visual">
+          <span>Comfort-first care</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the Doctor -->
+    <section class="section" id="doctor">
+      <div class="container doctor-grid">
+        <div class="doctor-photo"></div>
+        <div>
+          <p class="eyebrow">Meet The Doctor</p>
+          <h2>Gentle care with advanced technology.</h2>
+          <p>Dr. Morgan Lee focuses on clear communication, patient comfort, and modern dental wellness for the whole family.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section soft-section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Everything patients need to choose care.</h2>
+        </div>
+        <div class="service-grid">
+          <article>Preventive Dentistry</article>
+          <article>Cosmetic Dentistry</article>
+          <article>Invisalign Consults</article>
+          <article>Teeth Whitening</article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insurance and Before / After -->
+    <section class="section" id="insurance">
+      <div class="container insurance-grid">
+        <div>
+          <p class="eyebrow">Insurance Accepted</p>
+          <h2>Make verification easy for new patients.</h2>
+          <p>Patients can submit insurance details before scheduling so the office can confirm coverage.</p>
+        </div>
+        <div class="insurance-card">
+          <strong>Accepted Plans</strong>
+          <span>Delta Dental</span>
+          <span>Cigna</span>
+          <span>Aetna</span>
+          <span>Most PPO plans</span>
+        </div>
+      </div>
+      <div class="container before-gallery">
+        <div><span>Before</span></div>
+        <div><span>After</span></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section soft-section" id="faq">
+      <div class="container faq-wrap">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common patient questions.</h2>
+        <div class="faq-list">
+          <button class="faq-question" type="button">Do you accept new patients?</button>
+          <div class="faq-answer">Yes. New patient appointments can be requested online or by phone.</div>
+          <button class="faq-question" type="button">Can I verify insurance first?</button>
+          <div class="faq-answer">Yes. The insurance section can collect plan details before the visit.</div>
+          <button class="faq-question" type="button">Do you offer comfort options?</button>
+          <div class="faq-answer">Yes. The practice highlights gentle care, clear explanations, and patient comfort.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Appointment -->
+    <section class="section schedule-section" id="schedule">
+      <div class="container schedule-grid">
+        <div>
+          <p class="eyebrow">Schedule Appointment</p>
+          <h2>Online booking removes friction.</h2>
+          <p>Use a calm form for patient requests, insurance verification, and appointment preferences.</p>
+        </div>
+        <form class="booking-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="patient@example.com" required>
+          <label for="service">Appointment Type</label>
+          <select id="service" required>
+            <option value="">Choose appointment type</option>
+            <option>New patient exam</option>
+            <option>Cleaning</option>
+            <option>Cosmetic consultation</option>
+            <option>Insurance verification</option>
+          </select>
+          <label for="visit">Reason for Visit</label>
+          <textarea id="visit" rows="5" placeholder="Preferred dates, insurance provider, and any patient concerns." required></textarea>
+          <button class="btn" type="submit">Request Appointment</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-// Mobile navigation and simple homepage form message
+// Mobile menu, FAQ toggles, and appointment form message
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -16,12 +16,18 @@ if (menuToggle && navLinks) {
   });
 }
 
+document.querySelectorAll(".faq-question").forEach((question) => {
+  question.addEventListener("click", () => {
+    question.nextElementSibling.classList.toggle("is-open");
+  });
+});
+
 document.querySelectorAll("form").forEach((form) => {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const status = form.querySelector(".form-status");
     if (status) {
-      status.textContent = "Thanks. Your request is ready for a future form setup.";
+      status.textContent = "Appointment request ready for future form setup.";
     }
     form.reset();
   });

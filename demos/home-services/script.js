@@ -1,4 +1,4 @@
-// Mobile navigation and simple homepage form message
+// Mobile menu and appointment form message
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -21,7 +21,7 @@ document.querySelectorAll("form").forEach((form) => {
     event.preventDefault();
     const status = form.querySelector(".form-status");
     if (status) {
-      status.textContent = "Thanks. Your request is ready for a future form setup.";
+      status.textContent = "Appointment request ready for future form setup.";
     }
     form.reset();
   });

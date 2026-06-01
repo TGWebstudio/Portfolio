@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titan Freight Logistics | Logistics Demo</title>
+  <meta name="description" content="Corporate logistics company demo website by TG Web Studio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top">Titan Freight</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#quote">Quote</a>
+        <a href="../../index.html">TG Web Studio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Enterprise Transportation</p>
+          <h1>Freight Delivered On Time Every Time</h1>
+          <p>Reliable LTL, full truckload, hot shot, and dedicated route solutions for manufacturers, warehouses, brokers, and regional distributors.</p>
+          <a class="btn" href="#quote">Request Freight Quote</a>
+        </div>
+        <div class="route-card">
+          <div class="dispatch-label">Live Dispatch Network</div>
+          <span class="map-node node-a"></span>
+          <span class="map-node node-b"></span>
+          <span class="map-node node-c"></span>
+          <div class="route-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Freight solutions for every shipment size.</h2>
+        </div>
+        <div class="service-grid">
+          <article><h3>LTL Freight</h3><p>Cost-effective freight for partial loads and recurring shipments.</p></article>
+          <article><h3>Full Truckload</h3><p>Dedicated capacity for larger loads and time-sensitive freight.</p></article>
+          <article><h3>Hot Shot Delivery</h3><p>Fast regional delivery when the schedule cannot slip.</p></article>
+          <article><h3>Dedicated Routes</h3><p>Consistent route planning for contract logistics customers.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage Map -->
+    <section class="section coverage" id="coverage">
+      <div class="container coverage-grid">
+        <div>
+          <p class="eyebrow">Coverage Map</p>
+          <h2>Regional reach with national coordination.</h2>
+          <p>Show customers service lanes, route density, and dispatch coverage with a professional map visual.</p>
+        </div>
+        <div class="coverage-map"></div>
+      </div>
+    </section>
+
+    <!-- Fleet Statistics -->
+    <section class="section stats-section" id="fleet">
+      <div class="container">
+        <div class="stats-grid">
+          <article><strong class="counter" data-target="84">0</strong><span>Power Units</span></article>
+          <article><strong class="counter" data-target="320">0</strong><span>Daily Shipments</span></article>
+          <article><strong class="counter" data-target="99">0</strong><span>On-Time Rate</span></article>
+          <article><strong class="counter" data-target="24">0</strong><span>Dispatch Support</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications and Quote -->
+    <section class="section quote-section" id="quote">
+      <div class="container quote-grid">
+        <div>
+          <p class="eyebrow">Safety Certifications</p>
+          <h2>Compliance and safety are front and center.</h2>
+          <ul class="cert-list">
+            <li>DOT compliant operations</li>
+            <li>Electronic tracking and dispatch</li>
+            <li>Insured carrier network</li>
+          </ul>
+        </div>
+        <form class="quote-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="dispatch@example.com" required>
+          <label for="load-type">Load Type</label>
+          <select id="load-type" required>
+            <option value="">Choose load type</option>
+            <option>LTL Freight</option>
+            <option>Full Truckload</option>
+            <option>Hot Shot Delivery</option>
+            <option>Dedicated Route</option>
+          </select>
+          <label for="freight">Freight Details</label>
+          <textarea id="freight" rows="5" placeholder="Pickup, delivery city, dimensions, weight, and deadline." required></textarea>
+          <button class="btn" type="submit">Request Freight Quote</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

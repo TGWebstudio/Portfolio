@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Construction Group | Construction Demo</title>
+  <meta name="description" content="Rugged construction company demo website by TG Web Studio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Construction navigation">
+      <a class="logo" href="#top">Apex Construction</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#estimate">Estimate</a>
+        <a href="../../index.html">TG Web Studio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Commercial & Residential Construction</p>
+          <h1>Building Commercial & Residential Projects Across The Region</h1>
+          <p>Apex Construction Group handles rugged job sites, tight timelines, and high-quality results for property owners, developers, and growing businesses.</p>
+          <div class="button-row">
+            <a class="btn" href="#estimate">Request Estimate</a>
+            <a class="btn btn-dark" href="#projects">View Projects</a>
+          </div>
+        </div>
+        <div class="project-photo">
+          <span>20+ active builds completed this year</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Full-scope construction services.</h2>
+        </div>
+        <div class="service-grid">
+          <article><strong>General Contracting</strong><span>Commercial coordination and project management.</span></article>
+          <article><strong>Remodeling</strong><span>Interior and exterior upgrades for occupied properties.</span></article>
+          <article><strong>Roofing</strong><span>Repairs, replacements, and storm restoration.</span></article>
+          <article><strong>Concrete</strong><span>Flatwork, pads, walkways, and structural pours.</span></article>
+          <article><strong>New Construction</strong><span>Ground-up builds with clear timelines.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Gallery and Before / After Slider -->
+    <section class="section dark-section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Project Gallery</p>
+          <h2>Large project visuals build trust fast.</h2>
+        </div>
+        <div class="gallery-grid">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="before-after">
+          <div class="slider-visual">
+            <div class="after-panel"></div>
+            <div class="before-panel"></div>
+            <input class="before-slider" type="range" min="0" max="100" value="50" aria-label="Before and after slider">
+          </div>
+          <div>
+            <p class="eyebrow">Before / After</p>
+            <h3>Show transformations with an interactive slider.</h3>
+            <p>Drag the slider to compare a rough project start with the finished result.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials and Reviews -->
+    <section class="section" id="reviews">
+      <div class="container review-grid">
+        <div>
+          <p class="eyebrow">Google Reviews</p>
+          <h2>Trusted by property owners and project managers.</h2>
+        </div>
+        <article class="review-card">“Apex finished our remodel on time and kept the site organized from day one.”</article>
+        <article class="review-card">“Professional crew, clear updates, and the final concrete work looks excellent.”</article>
+      </div>
+    </section>
+
+    <!-- Financing and Estimate -->
+    <section class="section estimate-section" id="estimate">
+      <div class="container estimate-grid">
+        <div>
+          <p class="eyebrow">Financing Available</p>
+          <h2>Start the project with a clear estimate.</h2>
+          <p>Financing options are available for approved residential and commercial projects.</p>
+        </div>
+        <form class="quote-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" placeholder="(555) 123-4567" required>
+          <label for="project-type">Project Type</label>
+          <select id="project-type" required>
+            <option value="">Select project type</option>
+            <option>Commercial buildout</option>
+            <option>Residential remodel</option>
+            <option>Roofing</option>
+            <option>Concrete</option>
+            <option>New construction</option>
+          </select>
+          <label for="project">Project Details</label>
+          <textarea id="project" rows="5" placeholder="Location, timeline, budget range, and project goals." required></textarea>
+          <button class="btn" type="submit">Request Estimate</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

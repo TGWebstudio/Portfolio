@@ -1,4 +1,4 @@
-// Mobile navigation and simple homepage form message
+// Mobile menu, before/after slider, and quote form message
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -16,12 +16,21 @@ if (menuToggle && navLinks) {
   });
 }
 
+const slider = document.querySelector(".before-slider");
+const beforePanel = document.querySelector(".before-panel");
+
+if (slider && beforePanel) {
+  slider.addEventListener("input", () => {
+    beforePanel.style.width = `${slider.value}%`;
+  });
+}
+
 document.querySelectorAll("form").forEach((form) => {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const status = form.querySelector(".form-status");
     if (status) {
-      status.textContent = "Thanks. Your request is ready for a future form setup.";
+      status.textContent = "Estimate request ready for future form setup.";
     }
     form.reset();
   });

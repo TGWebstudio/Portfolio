@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capital Insurance & Financial | Insurance Demo</title>
+  <meta name="description" content="Premium insurance and financial advisor demo website by TG Web Studio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top">Capital Insurance</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#compare">Compare</a>
+        <a href="#agent">Agent</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quote">Quote</a>
+        <a href="../../index.html">TG Web Studio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Insurance & Financial Protection</p>
+          <h1>Protect What Matters Most</h1>
+          <p>A premium website for agents and advisors who need to build trust, explain coverage, and turn cautious visitors into qualified quote requests.</p>
+          <a class="btn" href="#quote">Request a Quote</a>
+        </div>
+        <div class="trust-panel">
+          <strong>Independent Guidance</strong>
+          <span>Licensed agents</span>
+          <span>Coverage reviews</span>
+          <span>Personal and commercial options</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Coverage options shown clearly.</h2>
+        </div>
+        <div class="service-grid">
+          <article>Auto Insurance</article>
+          <article>Home Insurance</article>
+          <article>Life Insurance</article>
+          <article>Commercial Insurance</article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage Comparison -->
+    <section class="section compare-section" id="compare">
+      <div class="container compare-grid">
+        <div>
+          <p class="eyebrow">Coverage Comparison</p>
+          <h2>Help visitors compare without feeling overwhelmed.</h2>
+          <p>Use a simple comparison layout to explain what basic, standard, and premium options can include.</p>
+        </div>
+        <div class="comparison-table">
+          <div><strong>Basic</strong><span>Required protection</span></div>
+          <div><strong>Standard</strong><span>Balanced coverage</span></div>
+          <div><strong>Premium</strong><span>Expanded protection</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agent Bio -->
+    <section class="section" id="agent">
+      <div class="container agent-grid">
+        <div class="agent-photo"></div>
+        <div>
+          <p class="eyebrow">Agent Bio</p>
+          <h2>Advice from a local professional.</h2>
+          <p>Jordan Price helps families and business owners understand coverage choices with clear, practical recommendations.</p>
+          <div class="badges">
+            <span>Licensed</span>
+            <span>Local Advisor</span>
+            <span>Annual Reviews</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-wrap">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions clients ask before requesting a quote.</h2>
+        <div class="faq-list">
+          <button class="faq-question" type="button">Can I compare multiple policy options?</button>
+          <div class="faq-answer">Yes. The agency can review coverage options and explain tradeoffs clearly.</div>
+          <button class="faq-question" type="button">Do you offer business insurance?</button>
+          <div class="faq-answer">Yes. Commercial insurance can be highlighted for small business owners.</div>
+          <button class="faq-question" type="button">How often should I review coverage?</button>
+          <div class="faq-answer">Many clients review annually or after major life or business changes.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Request / Contact -->
+    <section class="section quote-section" id="quote">
+      <div class="container quote-grid">
+        <div>
+          <p class="eyebrow">Quote Request</p>
+          <h2>Capture the right information up front.</h2>
+          <p>Forms can collect coverage type, contact details, and notes for a faster follow-up.</p>
+        </div>
+        <form class="quote-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="client@example.com" required>
+          <label for="type">Coverage Type</label>
+          <select id="type" required>
+            <option value="">Select coverage type</option>
+            <option>Auto Insurance</option>
+            <option>Home Insurance</option>
+            <option>Life Insurance</option>
+            <option>Commercial Insurance</option>
+            <option>Financial Review</option>
+          </select>
+          <label for="coverage">Coverage Needed</label>
+          <textarea id="coverage" rows="5" placeholder="Current coverage, renewal date, household or business details." required></textarea>
+          <button class="btn" type="submit">Request Quote</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Home Services | Home Services Demo</title>
+  <meta name="description" content="Lead-generation home services demo website by TG Web Studio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">Emergency service available: <a href="tel:+15552229111">(555) 222-9111</a></div>
+    </div>
+    <nav class="nav container">
+      <a class="logo" href="#top">Prime Home Services</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#emergency">Emergency</a>
+        <a href="#area">Service Area</a>
+        <a href="#booking">Book</a>
+        <a href="../../index.html">TG Web Studio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Plumbing / HVAC / Electrical / More</p>
+          <h1>One Call For Every Home Service Need</h1>
+          <p>Friendly home service pros for repairs, emergency visits, maintenance plans, and financed replacement projects.</p>
+          <div class="button-row">
+            <a class="btn" href="#booking">Book Appointment</a>
+            <a class="btn emergency-btn" href="tel:+15552229111">Emergency Call</a>
+          </div>
+        </div>
+        <div class="lead-card">
+          <strong>Same-Day Appointments</strong>
+          <small>Fast dispatch for urgent repairs and routine service calls.</small>
+          <span>Licensed technicians</span>
+          <span>Financing available</span>
+          <span>Upfront estimates</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>One website can route customers to the right service.</h2>
+        </div>
+        <div class="service-grid">
+          <article>Plumbing</article>
+          <article>HVAC</article>
+          <article>Electrical</article>
+          <article>Pest Control</article>
+          <article>Landscaping</article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency and Service Area -->
+    <section class="section emergency-section" id="emergency">
+      <div class="container emergency-grid">
+        <div>
+          <p class="eyebrow">Emergency Services</p>
+          <h2>Urgent calls need a strong phone CTA.</h2>
+          <p>Use clear messaging for leaks, outages, HVAC failures, and fast dispatch needs.</p>
+          <a class="btn emergency-btn" href="tel:+15552229111">Call Emergency Line</a>
+        </div>
+        <div class="service-map" id="area">
+          <span>North Zone</span>
+          <span>Central Zone</span>
+          <span>South Zone</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Financing and Appointment Booking -->
+    <section class="section" id="booking">
+      <div class="container booking-grid">
+        <div class="finance-card">
+          <p class="eyebrow">Financing</p>
+          <h2>Fix now. Pay over time.</h2>
+          <p>Promote financing for HVAC systems, major repairs, and larger home projects.</p>
+        </div>
+        <form class="booking-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" placeholder="(555) 222-9111" required>
+          <label for="service">Service Needed</label>
+          <select id="service" required>
+            <option value="">Choose a service</option>
+            <option>Plumbing</option>
+            <option>HVAC</option>
+            <option>Electrical</option>
+            <option>Pest Control</option>
+            <option>Landscaping</option>
+          </select>
+          <label for="details">Details</label>
+          <textarea id="details" rows="4" placeholder="Describe the issue, preferred date, and service address." required></textarea>
+          <button class="btn" type="submit">Request Appointment</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section">
+      <div class="container contact-inner">
+        <h2>Need help today?</h2>
+        <p>Call Prime Home Services for scheduling, emergency support, or a free estimate.</p>
+        <a class="btn" href="tel:+15552229111">(555) 222-9111</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
