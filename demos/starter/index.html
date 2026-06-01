@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshStart Cleaning Co. | Starter Demo</title>
+  <meta name="description" content="Starter website demo for a local cleaning business.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Simple starter website header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top">FreshStart Cleaning Co.</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#quote">Quote</a>
+        <a href="../../pricing.html">Pricing</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Starter Website Demo</p>
+          <h1>Reliable Cleaning For Busy Homes And Small Offices</h1>
+          <p>FreshStart Cleaning Co. helps local families and businesses keep their spaces fresh, healthy, and ready for the week.</p>
+          <div class="button-row">
+            <a class="btn" href="#quote">Request A Quote</a>
+            <a class="btn btn-light" href="#services">View Services</a>
+          </div>
+        </div>
+        <div class="clean-card">
+          <span>Weekly cleans</span>
+          <span>Move-in / move-out</span>
+          <span>Office refresh</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Simple services customers understand fast.</h2>
+        </div>
+        <div class="service-grid">
+          <article><h3>Home Cleaning</h3><p>Recurring weekly, biweekly, or monthly cleaning for kitchens, bathrooms, bedrooms, and common areas.</p></article>
+          <article><h3>Move-Out Cleaning</h3><p>Detailed cleaning before listing, moving, or handing keys back to a landlord.</p></article>
+          <article><h3>Small Office Cleaning</h3><p>Trash removal, surface cleaning, floors, breakrooms, and restrooms for small teams.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust and reviews -->
+    <section class="section soft-section" id="reviews">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>A clean starter site still builds trust.</h2>
+          <ul class="check-list">
+            <li>Insured local cleaning team</li>
+            <li>Clear arrival windows</li>
+            <li>Easy quote request form</li>
+          </ul>
+        </div>
+        <article class="review-card">
+          “The house felt brand new after one visit. Fast response, clear pricing, and easy scheduling.”
+          <strong>- Local Customer</strong>
+        </article>
+      </div>
+    </section>
+
+    <!-- Quote form -->
+    <section class="section quote-section" id="quote">
+      <div class="container quote-grid">
+        <div>
+          <p class="eyebrow">Free Quote</p>
+          <h2>Tell us what you need cleaned.</h2>
+          <p>This section turns visitors into leads without making the website feel complicated.</p>
+        </div>
+        <form class="quote-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+          <label for="service">Service Needed</label>
+          <select id="service" required>
+            <option value="">Choose a service</option>
+            <option>Home Cleaning</option>
+            <option>Move-Out Cleaning</option>
+            <option>Office Cleaning</option>
+          </select>
+          <label for="message">Notes</label>
+          <textarea id="message" rows="4" required></textarea>
+          <button class="btn" type="submit">Request Cleaning Quote</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

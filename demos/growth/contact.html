@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Estimate | Apex Construction Group</title>
+  <meta name="description" content="Construction estimate form page for the Apex Growth demo.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">Apex Construction Group</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="financing.html">Financing</a>
+        <a href="contact.html">Estimate</a>
+        <a href="../../pricing.html">Pricing</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="section quote-section">
+      <div class="container quote-grid">
+        <div>
+          <p class="eyebrow">Request Estimate</p>
+          <h1>Tell Apex About Your Project</h1>
+          <p>A dedicated estimate page gives serious visitors enough space to share the details a contractor needs.</p>
+          <ul class="check-list"><li>Project type and location</li><li>Timeline and budget range</li><li>Photos or links can be added later</li></ul>
+        </div>
+        <form class="quote-form">
+          <label for="name">Name</label><input id="name" type="text" required>
+          <label for="phone">Phone</label><input id="phone" type="tel" required>
+          <label for="email">Email</label><input id="email" type="email" required>
+          <label for="project">Project Type</label>
+          <select id="project" required><option value="">Choose project type</option><option>Remodeling</option><option>Roofing</option><option>Concrete</option><option>Commercial Buildout</option></select>
+          <label for="timeline">Ideal Timeline</label><input id="timeline" type="text" placeholder="Example: within 60 days">
+          <label for="notes">Project Notes</label><textarea id="notes" rows="5" required></textarea>
+          <button class="btn" type="submit">Send Estimate Request</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="../../script.js"></script>
+</body>
+</html>

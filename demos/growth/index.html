@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Construction Group | Growth Demo</title>
+  <meta name="description" content="Growth website demo for a construction company.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Growth demo header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top">Apex Construction Group</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="financing.html">Financing</a>
+        <a href="contact.html">Estimate</a>
+        <a href="../../pricing.html">Pricing</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Growth Website Demo</p>
+          <h1>Build With A Contractor That Keeps Projects Moving</h1>
+          <p>Apex Construction Group helps homeowners, property managers, and business owners plan remodels, roofing, concrete, and buildouts with clear communication from estimate to final walkthrough.</p>
+          <div class="button-row">
+            <a class="btn" href="contact.html">Request Estimate</a>
+            <a class="btn btn-outline" href="projects.html">See Recent Projects</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <strong>Licensed, insured, and built for serious projects</strong>
+          <span>Residential remodeling</span>
+          <span>Roofing and exterior repairs</span>
+          <span>Concrete flatwork</span>
+          <span>Commercial buildouts</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Focused service pages help customers choose faster.</h2>
+        </div>
+        <div class="service-grid">
+          <article><h3>Remodeling</h3><p>Kitchen, bath, basement, and exterior upgrades with clear timelines and project planning.</p></article>
+          <article><h3>Roofing</h3><p>Storm repairs, replacements, inspections, and insurance-ready documentation.</p></article>
+          <article><h3>Concrete</h3><p>Driveways, patios, walkways, pads, and job-site concrete pours.</p></article>
+          <article><h3>Commercial Buildouts</h3><p>Office, retail, and warehouse improvements for growing businesses.</p></article>
+        </div>
+        <a class="section-link" href="services.html">Explore all construction services</a>
+      </div>
+    </section>
+
+    <!-- Proof -->
+    <section class="section dark-section" id="proof">
+      <div class="container proof-grid">
+        <div>
+          <p class="eyebrow">Trust Builders</p>
+          <h2>Growth sites show proof before asking for the lead.</h2>
+          <p>Project stats, review cards, badges, financing notes, and gallery blocks make the company feel established.</p>
+        </div>
+        <div class="stat-grid">
+          <article><strong>14</strong><span>years experience</span></article>
+          <article><strong>250+</strong><span>projects completed</span></article>
+          <article><strong>4.9</strong><span>average rating</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Recent Work</p>
+          <h2>Project proof makes the estimate feel easier to request.</h2>
+        </div>
+        <div class="project-grid">
+          <article><span>Residential Remodel</span><h3>Kitchen and main-floor update</h3><p>New finishes, improved layout, and a cleaner project timeline for a family home.</p></article>
+          <article><span>Roof Replacement</span><h3>Storm-damaged shingle system</h3><p>Inspection support, material guidance, and a fast exterior restoration process.</p></article>
+          <article><span>Concrete</span><h3>Driveway and walkway pour</h3><p>Site prep, forms, finish work, and cleanup for a polished residential entry.</p></article>
+        </div>
+        <a class="section-link" href="projects.html">View project details</a>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Process</p>
+          <h2>A clear path from first call to final walkthrough.</h2>
+        </div>
+        <div class="process-grid">
+          <article><span>01</span><h3>Site Visit</h3><p>Review the space, project goals, timeline, and rough budget.</p></article>
+          <article><span>02</span><h3>Written Estimate</h3><p>Get a scoped proposal with clear next steps and options.</p></article>
+          <article><span>03</span><h3>Build & Updates</h3><p>Stay informed as crews coordinate work, materials, inspections, and cleanup.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="section quote-section" id="quote">
+      <div class="container quote-grid">
+        <div>
+          <p class="eyebrow">Quote Request</p>
+          <h2>Ready to plan your project?</h2>
+          <p>Send the basics and Apex will follow up with questions, scheduling options, and a clear next step.</p>
+        </div>
+        <form class="quote-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+          <label for="project">Project Type</label>
+          <select id="project" required>
+            <option value="">Choose project type</option>
+            <option>Remodeling</option>
+            <option>Roofing</option>
+            <option>Concrete</option>
+            <option>Commercial Buildout</option>
+          </select>
+          <label for="notes">Project Notes</label>
+          <textarea id="notes" rows="5" required></textarea>
+          <button class="btn" type="submit">Request Estimate</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
